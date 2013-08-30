@@ -4,4 +4,4 @@ Uses the following addons:
 
 * ace-jump-mode
 * yasnippet
-* molokai
+* monokai
