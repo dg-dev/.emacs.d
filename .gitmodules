@@ -4,3 +4,6 @@
 [submodule "elisp/yasnippet"]
 	path = elisp/yasnippet
 	url = https://github.com/capitaomorte/yasnippet.git
+[submodule "themes/monokai"]
+	path = themes/monokai
+	url = https://github.com/oneKelvinSmith/monokai-emacs.git
