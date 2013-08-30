@@ -32,6 +32,11 @@
   t)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
+; yasnippet
+(add-to-list 'load-path "~/.emacs.d/elisp/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
+
 ; executes stuff after loading
 (defun post-init ()
   (set-frame-height (selected-frame) 40)
