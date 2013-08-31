@@ -48,11 +48,16 @@
 (defun post-init ())
 (add-hook 'after-init-hook 'post-init)
 
-;; windows specific stuff
+; change cmd to meta on mac
+(setq mac-command-modifier 'meta)
+
+;; gui specific stuff
 (if window-system
     (progn 
-      ;; windows font
-      (set-default-font "Consolas-11")
+      ;; font
+      (if (string= system-type "darwin")
+	   (set-default-font "Monaco-12")
+	  (set-default-font "Consolas-11"))
       
       ;; frame size
       (set-frame-size (selected-frame) 140 40)))
