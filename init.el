@@ -55,10 +55,18 @@
 (if window-system
     (progn 
       ;; font
-      (if (string= system-type "darwin")
-	   (set-default-font "Monaco-12")
-	  (set-default-font "Consolas-11"))
+      (cond
+       ((string= system-name "THINKPAD-T43")
+	(set-default-font "Courier New-10"))
+       ((string= system-type "windows-nt")
+	(set-default-font "Consolas-11"))
+       ((string= system-type "darwin")
+	(set-default-font "Monaco-12")))
       
       ;; frame size
-      (set-frame-size (selected-frame) 140 40)))
+      (cond
+       ((string= system-name "THINKPAD-T43")
+	(set-frame-size (selected-frame) 110 40))
+       (t
+	(set-frame-size (selected-frame) 140 40)))))
 
