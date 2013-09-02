@@ -26,6 +26,10 @@
  kept-old-versions 2
  version-control t)
 
+;; paren mode
+(show-paren-mode 1)
+(setq show-paren-delay 0)
+
 ;; monokai (color theme)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai/")
 (load-theme 'monokai t)
