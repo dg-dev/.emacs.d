@@ -17,6 +17,10 @@
 (ido-mode 1)
 (setq ido-save-directory-list-file "~/.emacs.d/cache/ido.last")
 
+;; shift+arrow window navigation (wind move)
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+
 ;; junk 
 (setq
  backup-by-copying t
