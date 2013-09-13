@@ -69,8 +69,10 @@
        ((string= system-type "windows-nt")
 	(set-default-font "Consolas-11"))
        ((string= system-type "darwin")
-	(set-default-font "Monaco-12")))
-      
+	(set-default-font "Monaco-12"))
+       ((string= system-type "gnu/linux")
+	(set-default-font "Anonymous\ Pro-12")))
+
       ;; frame size
       (cond
        ((string= system-name "THINKPAD-T43")
